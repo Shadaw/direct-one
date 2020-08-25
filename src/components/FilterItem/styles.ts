@@ -12,7 +12,7 @@ export const Container = styled.li<ContainerProps>`
   div {
     display: flex;
 
-    img {
+    svg {
       margin-right: 10px;
       width: 16px;
     }
@@ -43,6 +43,14 @@ export const Container = styled.li<ContainerProps>`
       css`
         font-weight: bold;
         color: #117eff;
+
+        &:hover {
+          color: #0867d8;
+        }
+
+        &:hover span {
+          background-color: #0867d8;
+        }
       `}
 
     span {

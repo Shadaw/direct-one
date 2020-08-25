@@ -1,34 +1,44 @@
-import React from 'react';
-
-import bed from '../../assets/icons/bed.svg';
-import check from '../../assets/icons/check.svg';
-import paperPlane from '../../assets/icons/paper-plane.svg';
-import pen from '../../assets/icons/pen.svg';
-import playCircle from '../../assets/icons/play-circle.svg';
-import table from '../../assets/icons/table.svg';
+import React, { Dispatch, SetStateAction } from 'react';
+import {
+  Table,
+  PaperPlane,
+  PlayCircle,
+  Pen,
+  Bed,
+  Check,
+} from '../../assets/icons';
 
 import { Container } from './styles';
 
 interface FilterItemProps {
-  index: number;
+  status: number;
   name: string;
   quantity: number;
-  selected?: boolean;
+  selected: number;
+  setSelected: Dispatch<SetStateAction<number>>;
 }
 
 const FilterItem: React.FC<FilterItemProps> = ({
-  index,
+  status,
   name,
   quantity,
   selected,
+  setSelected,
 }) => {
-  const icons = [table, paperPlane, playCircle, pen, bed, check];
+  const icons = [
+    <Table fill="#D190DD" />,
+    <PaperPlane fill="#C1CA4F" />,
+    <PlayCircle fill="#35C667" />,
+    <Pen fill="#3FA8F4" />,
+    <Bed fill="#EBBD3E" />,
+    <Check fill="#9FABD5" />,
+  ];
 
   return (
-    <Container selected={selected}>
+    <Container selected={selected === status}>
       <div>
-        <img src={icons[index]} alt={name} />
-        <button type="button">
+        {icons[status]}
+        <button type="button" onClick={() => setSelected(status)}>
           {name}
           <span>{quantity}</span>
         </button>

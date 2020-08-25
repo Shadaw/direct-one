@@ -7,7 +7,7 @@ export const Container = styled.div`
   background-color: #1a1731;
   height: 100vh;
   width: 70px;
-  padding: 45px 0;
+  padding: 32px 0;
   border-width: 3px 0;
   border-style: solid;
   border-image: linear-gradient(90deg, #00e1ff, #117eff);
@@ -27,7 +27,7 @@ export const Container = styled.div`
   }
 
   img {
-    width: 50px;
+    width: 40px;
     margin-bottom: 68px;
   }
 
@@ -38,15 +38,16 @@ export const Container = styled.div`
   }
 
   svg {
+    width: 20px;
     & + svg {
       margin-top: 24px;
     }
 
-    color: #e4e6f1;
-    transition: color 0.2s;
+    fill: #e4e6f1;
+    transition: fill 0.2s;
 
     &:hover {
-      color: #117eff;
+      fill: #117eff;
     }
   }
 `;
