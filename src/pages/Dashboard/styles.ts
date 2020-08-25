@@ -9,7 +9,11 @@ export const Content = styled.div`
   padding: 0 90px;
 
   aside {
-    margin-top: 33px;
+    display: flex;
+
+    > div {
+      margin-top: 33px;
+    }
 
     h1 {
       font-size: 16px;
@@ -19,6 +23,10 @@ export const Content = styled.div`
     ul {
       margin-top: 30px;
       width: 149px;
+    }
+
+    table {
+      margin: 80px auto 0;
     }
   }
 `;
