@@ -6,7 +6,7 @@ export const Container = styled.div`
   align-items: center;
   background-color: #1a1731;
   height: 100vh;
-  width: 100px;
+  width: 70px;
   padding: 45px 0;
   border-width: 3px 0;
   border-style: solid;

@@ -18,6 +18,7 @@ export const Content = styled.div`
 
     ul {
       margin-top: 30px;
+      width: 149px;
     }
   }
 `;

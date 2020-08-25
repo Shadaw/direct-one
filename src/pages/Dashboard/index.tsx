@@ -39,6 +39,7 @@ const Dashboard: React.FC = () => {
             {journeys.map(journey => (
               <FilterItem
                 key={journey.id}
+                index={journey.id}
                 name={journey.name}
                 quantity={journey.quantity}
               />
