@@ -1,0 +1,16 @@
+export { ReactComponent as Bed } from './bed.svg';
+export { ReactComponent as CcmCloud } from './ccm-cloud.svg';
+export { ReactComponent as ChartPie } from './chart-pie.svg';
+export { ReactComponent as Check } from './check.svg';
+export { ReactComponent as Exchange } from './exchange-alt.svg';
+export { ReactComponent as ExternalLink } from './external-link-alt-solid.svg';
+export { ReactComponent as Gem } from './gem.svg';
+export { ReactComponent as PaperPlane } from './paper-plane.svg';
+export { ReactComponent as Pen } from './pen.svg';
+export { ReactComponent as PlayCircle } from './play-circle.svg';
+export { ReactComponent as Plus } from './plus.svg';
+export { ReactComponent as Rocket } from './rocket.svg';
+export { ReactComponent as SignOut } from './sign-out-alt.svg';
+export { ReactComponent as Table } from './table.svg';
+export { ReactComponent as Tools } from './tools.svg';
+export { ReactComponent as UserFriends } from './user-friends.svg';
