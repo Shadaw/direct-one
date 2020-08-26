@@ -38,6 +38,7 @@
     "react/jsx-one-expression-per-line": "off",
     "react/jsx-props-no-spreading": "off",
     "no-unused-expressions":"off",
+    "jsx-a11y/label-has-associated-control": "off",
     "import/extensions": [
       "error",
       "ignorePackages",
