@@ -7,8 +7,7 @@ export const Container = styled.header`
   justify-content: space-between;
   height: 90px;
 
-  > div,
-  form {
+  > div {
     display: flex;
     align-items: center;
   }

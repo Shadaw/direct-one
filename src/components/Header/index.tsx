@@ -1,6 +1,7 @@
 import React, { useState, useCallback } from 'react';
 
 import { FiPlus, FiSearch, FiX } from 'react-icons/fi';
+import { useModal } from '../../hooks/modal';
 
 import acmeLogo from '../../assets/images/acme-logo.png';
 
@@ -8,6 +9,7 @@ import { Container, Avatar, Tooltip, Logo, Input } from './styles';
 
 const Header: React.FC = () => {
   const [searchValue, setSearchValue] = useState('');
+  const { openModal } = useModal();
 
   const handleCleanSearch = useCallback(() => {
     setSearchValue('');
@@ -23,7 +25,7 @@ const Header: React.FC = () => {
           <img src={acmeLogo} alt="logo acme" />
         </Logo>
       </div>
-      <form>
+      <div>
         <Input>
           <FiSearch />
           <input
@@ -34,11 +36,11 @@ const Header: React.FC = () => {
           />
           {!!searchValue && <FiX onClick={handleCleanSearch} />}
         </Input>
-        <button type="submit">
+        <button type="button" onClick={openModal}>
           <FiPlus />
           Nova Jornada
         </button>
-      </form>
+      </div>
     </Container>
   );
 };
