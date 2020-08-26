@@ -42,7 +42,10 @@ const Grid: React.FC<GridProps> = ({ journeys }) => {
             <td>{journey.name}</td>
             <td>{journey.recipients}</td>
             <td>{journey.success}</td>
-            <td>{icons[journey.status]}</td>
+            <td>
+              {icons[journey.status]}
+              {journey.statusInfo?.name}
+            </td>
           </tr>
         ))}
       </tbody>

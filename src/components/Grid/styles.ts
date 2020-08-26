@@ -11,7 +11,8 @@ export const Container = styled.table`
     font-weight: normal;
     padding: 0 16px;
 
-    &:first-child {
+    &:first-child,
+    &:last-child {
       text-align: left;
     }
   }
@@ -23,6 +24,7 @@ export const Container = styled.table`
 
       svg {
         width: 14px;
+        margin-right: 8px;
       }
 
       td {
@@ -34,6 +36,12 @@ export const Container = styled.table`
 
       td:first-child {
         font-weight: bold;
+        text-align: left;
+      }
+
+      td:last-child {
+        display: flex;
+        align-items: center;
         text-align: left;
       }
     }

@@ -18,6 +18,9 @@ export interface Journey {
   id: string;
   name: string;
   status: number;
+  statusInfo: {
+    name: string | undefined;
+  };
   recipients: string;
   success: string;
 }
@@ -43,11 +46,16 @@ const Dashboard: React.FC = () => {
         `/journey/${selectedJourneyFilter || ''}`,
       );
 
-      setJourneys(response);
+      const formatedJourneys = response.map((data: Journey) => ({
+        ...data,
+        statusInfo: journeyFilter[data.status],
+      }));
+
+      setJourneys(formatedJourneys);
     }
 
     loadJourneys();
-  }, [selectedJourneyFilter]);
+  }, [journeyFilter, selectedJourneyFilter]);
 
   return (
     <Container>
