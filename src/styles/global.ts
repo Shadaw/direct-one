@@ -7,7 +7,7 @@ export default createGlobalStyle`
     outline: 0;
     box-sizing: border-box;
     list-style: none;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Gotham;
   }
 
   body {
