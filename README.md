@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img alt="Logo D1" src="./.github/logotipo.png" />
+    <img width="200" alt="Logo D1" src="./.github/logotipo.png" />
     <br>
     D1 - Better Journeys
 </h1>
