@@ -40,7 +40,7 @@ $ cd direct-one
 $ yarn
 
 # Run project
-yarn start
+$ yarn start
 ```
 
 
