@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img alt="Logo D1" src="./github/logotipo.png" />
+    <img alt="Logo D1" src="./.github/logotipo.png" />
     <br>
     D1 - Better Journeys
 </h1>
@@ -12,11 +12,11 @@
   <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/Shadaw/direct-one.svg">
 </p>
 
-<img align="center" src="./github/Directone.gif"></img>
+<img align="center" src="./.github/Directone.gif"></img>
 
-<img align="center" src="./github/Directone-Dashboard.png"></img>
+<img align="center" src="./.github/Directone-Dashboard.png"></img>
 
-<img align="center" src="./github/Direactone-Modal.png"></img>
+<img align="center" src="./.github/Direactone-Modal.png"></img>
 
 
 ## 👨‍💻 Technologies
