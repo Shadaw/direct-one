@@ -25,7 +25,8 @@
 -  [TypeScript](https://www.typescriptlang.org/)
 -  [Styled-components](https://www.styled-components.com/)
 -  [Axios](https://github.com/axios/axios)
-
+-  [Eslint](https://eslint.org/)
+-  [Prettier](https://prettier.io/)
 
 ## 📖 How To Use
 
